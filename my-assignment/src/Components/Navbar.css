@@ -1,0 +1,44 @@
+.Head-Nav{
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    padding: 0.8rem;
+}
+.Left-Nav{
+    display: flex;
+    column-gap: 1rem;
+    margin-left: 1.5rem;
+}
+.Right-Nav{
+    display: flex;
+    column-gap: 1rem;
+    margin-right: 1.5rem;
+}
+.Notion-button>button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 7.5rem;
+    font-weight: 600;
+}
+.Notion-button>button:hover{
+    background-color: rgb(73, 70, 70);
+}
+.Hover-fun{
+padding: 0.1rem;
+display: flex;
+}
+.Hover-fun>p{
+    margin-top: -0.001rem;
+    margin-left: 0.3rem;
+   
+    }
+
+.Hover-fun:hover{
+    background-color: #ebeae9;
+    border-radius: 5px;
+
+}
+

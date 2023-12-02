@@ -1,5 +1,6 @@
 import React from 'react';
 import './homepage.css';
+import Collapse from './Collapse';
 
 const Homepage = () => {
 
@@ -97,47 +98,21 @@ const Homepage = () => {
                 </div>
 
             </div>
-            <div className='section section4'>
-                <div><button className='Pricing_button'>💲 PRICING</button></div>
-                <div className='Section4_span1_div'><span className='Section4_span1'><h2>Select your ideal</h2><h2 style={{ color: "#fe8162" }}> Pricing </h2><h2> plan</h2></span></div>
-                <div className='Section4_span2_div' ><span className='Section4_span2'>At Manage Wise, we believe in providing you with<br></br>
-                    pricing plans that adapt to your unique needs.</span></div>
-                <div className='Card'>
-                    <div className='Card1'>
-                        <div><button>FREE</button></div>
-                        <div><span>$0</span><span>/month</span></div>
-                        <div>
-                            <div>Access to all basic features</div>
-                            <div>Reporting and analytics</div>
-                            <div>Up to 5 individual users</div>
-                            <div>Chat and email support</div>
-                        </div>
-                        <div><button>Get started</button></div>
-                    </div>
-                    <div className='Card2'>
-                    <div><button>FREE</button></div>
-                        <div><span>$0</span><span>/month</span></div>
-                        <div>
-                            <div>Access to all basic features</div>
-                            <div>Reporting and analytics</div>
-                            <div>Up to 5 individual users</div>
-                            <div>Chat and email support</div>
-                        </div>
-                        <div><button>Get started</button></div>
-                    </div>
-                    <div className='Card3'>
-                    <div><button>FREE</button></div>
-                        <div><span>$0</span><span>/month</span></div>
-                        <div>
-                            <div>Access to all basic features</div>
-                            <div>Reporting and analytics</div>
-                            <div>Up to 5 individual users</div>
-                            <div>Chat and email support</div>
-                        </div>
-                        <div><button>Get started</button></div>
+            <div className="section section4" id='faq'>
+                <div className='faqDetails'>
+                    <span className='heading'>🙋‍♀️ FAQ</span>
+                    <div className='headingTextSection4'>Need <span className='orangeText'>Answers? </span></div>
+                    <div className="paraDetails">
+                        Check out our most commonly asked questions below to find the information you need.
                     </div>
                 </div>
-
+                <div className='faqContainer'>
+                    <Collapse title={"What is Manage Wise and what does it offer?"} children={"Manage Wise is a comprehensive management platform designed to streamline your business operations, enhance productivity, and drive success. It offers a range of features including task management, scheduling, communication tools, analytics, and more."} />
+                    <Collapse title={"Is Manage Wise suitable for small businesses and larger enterprises alike?"} children={"Yes, Manage Wise is designed to cater to the needs of both small businesses and larger enterprises. Its scalable features and customizable options make it versatile for various business sizes."} />
+                    <Collapse title={"Can I access Manage Wise from different devices and platforms?"} children={"Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices."} />
+                    <Collapse title={"What kind of support options do you offer to users?"} children={"We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise."} />
+                    <Collapse title={"How secure is the data stored within Manage Wise?"} children={"Your data's security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected."} />
+                </div>
             </div>
             <div className='fixedButton'>
                 <img src="https://www.svgrepo.com/show/306070/framer.svg" alt="" />

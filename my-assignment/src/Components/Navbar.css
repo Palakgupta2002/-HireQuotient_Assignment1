@@ -1,44 +1,38 @@
-.Head-Nav{
+.navbar {
     display: flex;
     justify-content: space-between;
-    position: static;
-    padding: 0.8rem;
-}
-.Left-Nav{
+    align-items: center;
+    padding: 16px 24px;
+    background-color: rgb(253, 242, 236);
+    border-bottom: 2px solid rgba(118, 117, 117, 0.05);
+  }
+  .logo img {
+    width: 180px;
+  }
+  .navValue {
     display: flex;
-    column-gap: 1rem;
-    margin-left: 1.5rem;
-}
-.Right-Nav{
+    column-gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+  }
+  .navLinks {
     display: flex;
-    column-gap: 1rem;
-    margin-right: 1.5rem;
-}
-.Notion-button>button{
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    width: 7.5rem;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 17px;
+  }
+  .dot {
+    margin-top: -5px;
+    color: rgb(202, 188, 181);
+  }
+  .templateButton {
+    background-color: white;
+    padding: 16px 20px;
+    border: 1px solid #EDEDFA;
+    border-radius: 10px;
+    font-size: 15px;
     font-weight: 600;
-}
-.Notion-button>button:hover{
-    background-color: rgb(73, 70, 70);
-}
-.Hover-fun{
-padding: 0.1rem;
-display: flex;
-}
-.Hover-fun>p{
-    margin-top: -0.001rem;
-    margin-left: 0.3rem;
-   
-    }
-
-.Hover-fun:hover{
-    background-color: #ebeae9;
-    border-radius: 5px;
-
-}
-
+    letter-spacing: 1px;
+  }
+  

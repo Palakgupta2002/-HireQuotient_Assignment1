@@ -1,28 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
-import { UpOutlined, DownOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
-    const [outlined, setOutlined] = useState(<DownOutlined />);
     return (
-        <div className='Head-Nav'>
-            <div className='Left-Nav'>
-                <div>image</div>
-                
-                <div className='Hover-fun'>Product<p>{outlined}</p></div>
-                <div className='Hover-fun'>Download<p>{outlined}</p></div>
-                <div className='Hover-fun'>Solution<p>{outlined}</p></div>
-                <div className='Hover-fun'>Resources<p>{outlined}</p></div>
-                <div className='Hover-fun'>Prices</div>
-                
+        <div className="navbar">
+            <div className="logo">
+                <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="" />
             </div>
-            <div className='Right-Nav'>
-                <div>Request a demo  |</div>
-                <div className='Hover-fun'>Connection</div>
-                <div className='Notion-button'><button>Get Notion free</button></div>
+            <div className="navValue">
+                <div className="navLinks">
+                    <span>Features</span>
+                    <span className='dot'>.</span>
+                    <span>FAQ</span>
+                    <span className='dot'>.</span>
+                    <span>Pricing</span>
+                    <span className='dot'>.</span>
+                    <span>Testimonials</span>
+                </div>
+                <button className="templateButton">Buy Template</button>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

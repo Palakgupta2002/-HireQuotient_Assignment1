@@ -112,8 +112,143 @@ const Homepage = () => {
                     <Collapse title={"Can I access Manage Wise from different devices and platforms?"} children={"Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices."} />
                     <Collapse title={"What kind of support options do you offer to users?"} children={"We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise."} />
                     <Collapse title={"How secure is the data stored within Manage Wise?"} children={"Your data's security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected."} />
+                </div>   
+            </div>
+            <div className="section section5" id='pricing'>
+                <span className='headingPricing'>💲PRICING</span>
+                <div className='headingTextSection5'>Select your ideal <span className='orangeText'>Pricing</span> plan</div>
+                <span className='headingTextSection5Para'>At Manage Wise, we believe in providing you with <br />pricing plans that adapt to your unique needs.</span>
+                <div className="pricingCardContainer">
+                    <div className="pricingCardOne">
+                        <span className="cardButton">FREE</span>
+                        <div className='dollarText'><span className='dollar'>$0</span> /month</div>
+                        <div className="pricingDescription">
+                            <span>Access to all basic features</span>
+                            <span>Reporting and analytics</span>
+                            <span>Up to 5 individual users</span>
+                            <span>Chat and email support</span>
+                        </div>
+                        <span className="getStartedButton">Get started</span>
+                    </div>
+                    <div className="pricingCardTwo">
+                        <span className="cardButton">STANDARD</span>
+                        <div className='dollarTextSecond'><span className='dollarTwo'>$25</span> /month</div>
+                        <div className="pricingDescription">
+                            <span>Access to all basic features</span>
+                            <span>Reporting and analytics</span>
+                            <span>Up to 5 individual users</span>
+                            <span>Chat and email support</span>
+                            <span>3+ integrations</span>
+                            <span>Account performance reporting</span>
+                        </div>
+                        <span className="getStartedButtonSecond">Get started</span>
+                    </div>
+                    <div className="pricingCardOne">
+                        <span className="cardButton">BUSINESS</span>
+                        <div><span className='dollar'>$42</span> /month</div>
+                        <div className="pricingDescription">
+                            <span>Access to all basic features</span>
+                            <span>Reporting and analytics</span>
+                            <span>Up to 5 individual users</span>
+                            <span>Chat and email support</span>
+                            <span>3+ integrations</span>
+                        </div>
+                        <span className="getStartedButton" style={{ marginTop: '45px' }}>Get started</span>
+                    </div>
                 </div>
             </div>
+            <div className="section section6" id="testimonials">
+                <span className='heading'>🧡 TESTIMONIALS</span>
+                <div className='headingTextSection2'>Hear from our <span className='orangeText'>Satisfied</span> clients</div>
+                <div className="paraTextSection6">Discover why our clients love working with us. Read their <br /> testimonials and learn how we has helped businesses.</div>
+                <div className="marqueeContainer">
+                    <marquee>
+                        <div className="testimonialCardContainer">
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonialCard">
+                                <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
+                                <div className="detailsContainer">
+                                    <img width={'100px'} src="https://framerusercontent.com/images/PIlOZWlmobm4uLtBhKFfw7HS4.jpg" alt="" />
+                                    <div className="nameWithDesignation">
+                                        <span>Sarah</span>
+                                        <span>Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+
             <div className='fixedButton'>
                 <img src="https://www.svgrepo.com/show/306070/framer.svg" alt="" />
                 <span>Made in Framer</span>

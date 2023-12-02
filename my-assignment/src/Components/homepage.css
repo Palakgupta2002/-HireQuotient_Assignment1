@@ -5,8 +5,12 @@
   background-color: rgb(253, 242, 236);
 }
 .section2,
-.section4 {
+.section4,
+.section5 {
   background-color: white;
+}
+a {
+  text-decoration: none;
 }
 .heading {
   color: rgb(130, 71, 255);
@@ -331,8 +335,143 @@
   line-height: 1.5em;
   width: 50%;
 }
+.headingPricing {
+  color: rgb(130, 71, 255);
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #ededfa;
+}
+.headingTextSection5 {
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.headingTextSection5Para {
+  color: rgb(118, 117, 117);
+  font-size: 20px;
+  font-weight: 600;
+}
+.pricingCardContainer {
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
+.pricingCardContainer > div {
+  padding: 25px 100px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 20px;
+}
+.dollarText {
+  color: rgb(118, 117, 117);
+}
+.pricingDescription {
+  font-size: 18px;
+  color: rgb(118, 117, 117);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  row-gap: 10px;
+  font-weight: 500;
+}
+.pricingCardOne {
+  background-color: #ededfa;
+}
+.pricingCardTwo {
+  background-color: rgb(28, 28, 28);
+  margin-top: -20px;
+}
+.cardButton {
+  background-color: white;
+  color: rgb(254, 129, 98);
+  width: fit-content;
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.getStartedButton {
+  background-color: white;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 80px;
+  font-weight: 600;
+}
+.getStartedButtonSecond {
+  background-color: rgb(130, 71, 255);
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-weight: 600;
+  color: white;
+}
+.dollar {
+  font-size: 56px;
+  color: black;
+}
+.dollarTwo {
+  font-size: 56px;
+  color: white;
+}
+.dollarTextSecond {
+  color: white;
+}
 .faqContainer {
   width: 70%;
+}
+.section6 {
+  text-align: left;
+}
+.paraTextSection6 {
+  color: rgb(118, 117, 117);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.marqueeContainer {
+  margin-top: 60px;
+}
+.testimonialCard {
+  border: 1px solid #ededfa;
+  display: grid;
+  padding: 30px;
+  border-radius: 20px;
+}
+.testimonialCardContainer{
+  display: flex;
+  column-gap: 20px;
+}
+.detailsContainer{
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.nameWithDesignation{
+  display: flex;
+  flex-direction: column;
+}
+.nameWithDesignation span:nth-child(1){
+  font-weight: 600;
+  font-size: 20px;
+}
+.nameWithDesignation span:nth-child(2){
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(118, 117, 117);
+}
+.review {
+  font-size: 24px;
+  width: 100%;
 }
 .fixedButton {
   position: fixed;

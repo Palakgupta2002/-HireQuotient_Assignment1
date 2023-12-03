@@ -34,7 +34,8 @@ a {
 .orangeText {
   color: rgb(254, 129, 98);
 }
-.paraText {
+.paraText,
+.paraTextSection7 {
   font-size: 20px;
   color: rgb(118, 117, 117);
   text-align: center;
@@ -42,6 +43,7 @@ a {
   font-weight: 500;
   margin-top: 15px;
 }
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -99,6 +101,12 @@ a {
 .headingTextSection2 {
   font-size: 56px;
   margin-top: 20px;
+  line-height: 1em;
+}
+.headingTextSection7 {
+  font-size: 56px;
+  margin-top: 20px;
+  line-height: 1em;
 }
 .productInsight {
   display: flex;
@@ -126,7 +134,9 @@ a {
   width: 100%;
   height: 300px;
 }
-
+.homepage {
+  overflow-x: hidden;
+}
 .star {
   font-size: 26px;
   padding: 7px;
@@ -200,6 +210,7 @@ a {
   margin-top: 15px;
   width: 40%;
 }
+
 .paraTextSectionFour {
   font-size: 20px;
   color: rgb(118, 117, 117);
@@ -478,61 +489,64 @@ a {
   font-size: 24px;
   width: 100%;
 }
-.imageContainer {
-  display: flex;
-  margin-top: 50px;
-}
+
 .section7 {
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  column-gap: 100px;
-  margin: 130px;
-  padding: 20px;
-  border: 1px solid #ededfa;
-  border-radius: 20px;
-  margin-top: 0px;
-  height: 400px;
-  padding-top: 100px;
+  padding: 100px;
+  background: rgb(253, 242, 236);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 242, 236, 1) 62%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-#textSection7 {
-  font-weight: 700;
-  font-size: 40px;
+.sectionSeven {
+  padding: 100px;
+  border: 1px solid #ededfa;
+  text-align: left;
+  border-radius: 20px;
+  display: flex;
+  column-gap: 40px;
+  background-color: white;
 }
-#tryButtonSection7 {
-  padding: 12px 48px;
-  border-radius: 18px;
+.userBtn {
+  border: 1px solid #ededfa;
+  padding: 10px 30px;
+  background-color: white;
+  font-weight: 700;
   font-size: 20px;
+  border-radius: 10px;
+  width: fit-content;
+}
+.imageFirst {
+  background-image: url("https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512");
+  margin-top: 40px;
+}
+.footerContainer {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.sections {
+  display: grid;
+  row-gap: 15px;
+  text-align: left;
   font-weight: 500;
 }
-.tryStartedDiv {
-  margin-top: 30px;
+.copyrightContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
 }
-.purpleText {
-  color: rgb(130, 71, 255);
+.socialMedia {
+  display: flex;
+  column-gap: 30px;
 }
-#section7Heading {
-  color: black;
-  font-size: 20px;
-  width: 44%;
-  margin-left: 100px;
+.socialMedia img {
+  width: 25px;
 }
-.img1Section7 {
-  position: relative;
-}
-.img1Section7 {
-  position: absolute;
-}
-
-.userDivSection7 {
-  margin-top: -28px;
-}
-.imageContainerRight {
-  margin-top: 50px;
-  width: 30%;
-}
-
 .fixedButton {
   position: fixed;
   bottom: 20px;
@@ -929,17 +943,74 @@ a {
   .section6 {
     text-align: left;
   }
+
   .paraTextSection {
     color: rgb(118, 117, 117);
     font-size: 20px;
     font-weight: 600;
     margin-top: 20px;
   }
+  .section7 {
+    padding: 20px;
+  }
 
-  .section7,
-  .section8,
-  .section9 {
-    display: none !important;
+  .sectionSeven {
+    padding: 50px;
+    border: 1px solid #ededfa;
+    text-align: left;
+    border-radius: 20px;
+    display: grid;
+    row-gap: 40px;
+    background-color: white;
+  }
+  .headingTextSection7{
+    font-size: 30px;
+    width: 50%;
+    font-weight: 700;
+  }
+  .paraTextSection7{
+    width: 50%;
+    text-align: left;
+    margin: 10px 0px 0px 0px !important;
+  }
+  .userBtn {
+    border: 1px solid #ededfa;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  .imageFirst {
+    background-image: url("https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512");
+    margin-top: 40px;
+    width: 60%;
+  }
+  .footerContainer {
+    /* display: none !important; */
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .sections {
+    display: grid;
+    row-gap: 15px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .copyrightContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+  }
+  .socialMedia {
+    display: flex;
+    column-gap: 30px;
+  }
+  .socialMedia img {
+    width: 25px;
   }
 }
 
@@ -992,6 +1063,7 @@ a {
     font-weight: 700;
     margin-top: 20px;
   }
+
   .productInsight {
     display: grid;
     row-gap: 20px;
@@ -1281,1403 +1353,65 @@ a {
     font-weight: 600;
     margin-top: 20px;
   }
-
-  .section7,
-  .section8,
-  .section9 {
-    display: none !important;
-  }
-}
-
-.imageContainer {
-  display: flex;
-  margin-top: 50px;
-}
-.section7 {
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  column-gap: 100px;
-  margin: 130px;
-  padding: 20px;
-  border: 1px solid #ededfa;
-  border-radius: 20px;
-  margin-top: 0px;
-  height: 400px;
-  padding-top: 100px;
-}
-
-#textSection7 {
-  font-weight: 700;
-  font-size: 40px;
-}
-#tryButtonSection7 {
-  padding: 12px 48px;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.tryStartedDiv {
-  margin-top: 30px;
-}
-.purpleText {
-  color: rgb(130, 71, 255);
-}
-#section7Heading {
-  color: black;
-  font-size: 20px;
-  width: 44%;
-  margin-left: 100px;
-}
-.img1Section7 {
-  position: relative;
-}
-.img1Section7 {
-  position: absolute;
-}
-
-.userDivSection7 {
-  margin-top: -28px;
-}
-.imageContainerRight {
-  margin-top: 50px;
-  width: 30%;
-}
-
-.fixedButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  column-gap: 10px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.fixedButton img {
-  width: 20px;
-}
-@media only screen and (max-width: 426px) {
-  .section {
+  .section7 {
     padding: 20px;
   }
-  .heading {
-    font-size: 12px;
-  }
-  .section1 .headingText {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  .downText {
-    margin-top: 0px !important;
-  }
-  .paraText {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    text-align: center;
-    margin: auto;
-    font-weight: 500;
-    margin-top: 15px;
-  }
-  .buttons {
-    display: grid;
-    row-gap: 10px;
-  }
-  .buttons > div {
-    padding: 12px 96px;
-    border-radius: 18px;
-    font-size: 20px;
-    font-weight: 500;
-  }
 
-  .dashboardImage {
-    background-color: rgb(253, 242, 236);
-    margin-top: 40px;
-    border-radius: 28px;
-  }
-  .dashboardImage > img {
-    width: 100%;
-    border-radius: 18px;
-  }
-
-  .headingTextSection2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  .productInsight {
-    display: grid;
-    row-gap: 20px;
-    width: 100%;
-    margin-top: 60px;
-  }
-  .productInsight > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: #ededfa;
-    padding: 20px;
-    border-radius: 20px;
-    width: 90%;
-  }
-  .productInsight > div:nth-child(2) {
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
+  .sectionSeven {
+    padding: 50px;
     border: 1px solid #ededfa;
-  }
-  .productInsight > div:nth-child(2) > img {
-    width: 100%;
-    height: 300px;
-  }
-  .desText {
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
     text-align: left;
-    padding: 30px;
-  }
-  .description > span:nth-child(1) {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .description > span:nth-child(2) {
-    font-size: 16px;
-    color: rgb(118, 117, 117);
-    margin-top: 10px;
-    font-weight: 500;
-  }
-  .productFunctionality {
-    display: grid;
-    margin-top: 50px;
-    row-gap: 40px;
-    justify-content: center;
-  }
-  .card {
-    background-color: white;
     border-radius: 20px;
-    border: 1px solid #ededfa;
-  }
-  .card > img {
-    width: 100%;
-  }
-  .headingTextSectionThree {
-    font-size: 30px;
-    font-weight: 700;
-    width: 100%;
-  }
-  .headingTextSectionFour {
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-    margin-top: 20px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    line-height: 1.1em;
-  }
-  .paraTextSectionThree {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    text-align: left;
-    font-weight: 500;
-    margin-top: 15px;
-    width: 100%;
-  }
-  .paraTextSectionFour {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    font-weight: 500;
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-  }
-  .cardContainer {
-    display: grid;
-    row-gap: 30px;
-    grid-template-columns: auto;
-    margin-top: 200px;
-  }
-  .cardSectionThree {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    row-gap: 10px;
-    background-color: rgb(33, 33, 33);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    padding: 30px 30px 50px 30px;
-    border-radius: 25px;
-    height: 300px;
-  }
-  .cardTitle {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.3em;
-    width: 90%;
-    margin: auto;
-  }
-  .cardDescription {
-    font-family: "Inter-Medium", "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-    line-height: 1.5em;
-    color: rgb(118, 117, 117);
-    width: 90%;
-    margin: auto;
-    margin-top: 5px;
-  }
-  .iconBox {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    background-color: rgb(130, 71, 255);
-    border-radius: 12px;
-  }
-  .iconContainer {
-    display: grid;
-    place-items: center;
-    margin-top: 50px;
-  }
-  .headerOfIconContainer {
-    color: rgb(130, 71, 255);
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-  }
-  .iconDiv {
-    background-color: rgba(255, 255, 255, 0.05);
-    height: 40px;
-    width: 40px;
-    opacity: 1;
-    border-radius: 20px;
-    padding: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-  }
-  .iconDiv img {
-    width: 40px;
-  }
-  .image1 {
-    top: 20%;
-    left: 5%;
-  }
-  .image2 {
-    top: 20%;
-    left: 30%;
-  }
-  .image3 {
-    top: 20%;
-    left: 55%;
-  }
-  .image4 {
-    top: 20%;
-    left: 80%;
-  }
-  .image5 {
-    top: 25%;
-  }
-  .image6 {
-    top: 25%;
-  }
-
-  .bottomImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 20px;
-  }
-  .bottomImage img {
-    width: 100%;
-  }
-  .section4 {
-    display: grid;
-  }
-  .headingTextSection4 {
-    font-size: 56px;
-    margin-top: 20px;
-    line-height: 1em;
-    width: 100%;
-  }
-  .faqDetails {
-    text-align: left;
-    width: 100%;
-  }
-  .paraDetails {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-    line-height: 1.5em;
-    width: 100%;
-  }
-  .headingPricing {
-    color: rgb(130, 71, 255);
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: 1px solid #ededfa;
-  }
-  .headingTextSection5 {
-    font-size: 35px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .headingTextSection5Para {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .pricingCardContainer {
     display: grid;
     row-gap: 40px;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  .pricingCardContainer > div {
-    padding: 25px 100px 25px 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .dollarText {
-    color: rgb(118, 117, 117);
-  }
-  .pricingDescription {
-    font-size: 18px;
-    color: rgb(118, 117, 117);
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    row-gap: 10px;
-    font-weight: 500;
-  }
-  .pricingCardOne {
-    background-color: #ededfa;
-  }
-  .pricingCardTwo {
-    background-color: rgb(28, 28, 28);
-    margin-top: -20px;
-  }
-  .cardButton {
     background-color: white;
-    color: rgb(254, 129, 98);
-    width: fit-content;
-    padding: 2px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 500;
   }
-  .getStartedButton {
-    background-color: white;
-    font-size: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 80px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .getStartedButtonSecond {
-    background-color: rgb(130, 71, 255);
-    font-size: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 30px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-  }
-  .getStartedButtonSecond:hover {
-    box-shadow: rgba(130, 71, 255, 0.2) 0px 0px 0px 8px;
-  }
-  .dollar {
-    font-size: 56px;
-    color: black;
-  }
-  .dollarTwo {
-    font-size: 56px;
-    color: white;
-  }
-  .dollarTextSecond {
-    color: white;
-  }
-  .faqContainer {
-    width: 100%;
-    margin-top: 40px;
-  }
-  .section6 {
-    text-align: left;
-  }
-  .paraTextSection {
-    color: rgb(118, 117, 117);
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-
-  .section7,
-  .section8,
-  .section9 {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 769px) {
-  .heading {
-    font-size: 12px;
-  }
-  .section{
-    padding: 20px;
-  }
-  .section1 .headingText {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  .downText {
-    margin-top: 0px !important;
-  }
-  .paraText {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    text-align: center;
-    margin: auto;
-    font-weight: 500;
-    margin-top: 15px;
-  }
-  .buttons {
-    display: grid;
-    row-gap: 10px;
-  }
-  .buttons > div {
-    padding: 12px 200px;
-    border-radius: 18px;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .dashboardImage {
-    background-color: rgb(253, 242, 236);
-    margin-top: 40px;
-    border-radius: 28px;
-  }
-  .dashboardImage > img {
-    width: 100%;
-    border-radius: 18px;
-  }
-
-  .headingTextSection2 {
+  .headingTextSection7{
     font-size: 30px;
+    width: 100%;
     font-weight: 700;
-    margin-top: 20px;
   }
-  .productInsight {
-    display: grid;
-    row-gap: 20px;
+  .paraTextSection7{
     width: 100%;
-    margin-top: 60px;
-  }
-  .productInsight > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
     text-align: left;
-    background-color: #ededfa;
-    padding: 20px;
-    border-radius: 20px;
-    width: 95%;
+    margin: 10px 0px 0px 0px !important;
   }
-  .productInsight > div:nth-child(2) {
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
+  .userBtn {
     border: 1px solid #ededfa;
-  }
-  .productInsight > div:nth-child(2) > img {
-    width: 100%;
-    height: 300px;
-  }
-  .desText {
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 30px;
-  }
-  .description > span:nth-child(1) {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .description > span:nth-child(2) {
-    font-size: 16px;
-    color: rgb(118, 117, 117);
-    margin-top: 10px;
-    font-weight: 500;
-  }
-  .productFunctionality {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    row-gap: 40px;
-    width: 100%;
-  }
-
-  .cardContainer {
-    display: grid;
-    row-gap: 30px;
-    grid-template-columns: auto;
-    margin-top: 200px;
-  }
-  .cardSectionThree {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    row-gap: 10px;
-    background-color: rgb(33, 33, 33);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    padding: 30px 30px 50px 30px;
-    border-radius: 25px;
-    height: 300px;
-  }
-  .cardTitle {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.3em;
-    width: 90%;
-    margin: auto;
-  }
-  .cardDescription {
-    font-family: "Inter-Medium", "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-    line-height: 1.5em;
-    color: rgb(118, 117, 117);
-    width: 90%;
-    margin: auto;
-    margin-top: 5px;
-  }
-  .iconBox {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    background-color: rgb(130, 71, 255);
-    border-radius: 12px;
-  }
-  .iconContainer {
-    display: grid;
-    place-items: center;
-    margin-top: 50px;
-  }
-  .headerOfIconContainer {
-    color: rgb(130, 71, 255);
+    padding: 10px 30px;
     background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-  }
-  .iconDiv {
-    background-color: rgba(255, 255, 255, 0.05);
-    height: 40px;
-    width: 40px;
-    opacity: 1;
-    border-radius: 20px;
-    padding: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-  }
-  .iconDiv img {
-    width: 40px;
-  }
-  .image1 {
-    top: 20%;
-    left: 5%;
-  }
-  .image2 {
-    top: 20%;
-    left: 30%;
-  }
-  .image3 {
-    top: 20%;
-    left: 55%;
-  }
-  .image4 {
-    top: 20%;
-    left: 80%;
-  }
-  .image5 {
-    top: 25%;
-  }
-  .image6 {
-    top: 25%;
-  }
-
-  .bottomImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 20px;
-  }
-  .bottomImage img {
-    width: 100%;
-  }
-  .section4 {
-    display: grid;
-  }
-  .headingTextSection4 {
-    font-size: 56px;
-    margin-top: 20px;
-    line-height: 1em;
-    width: 100%;
-  }
-  .faqDetails {
-    text-align: left;
-    width: 100%;
-  }
-  .paraDetails {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-    line-height: 1.5em;
-    width: 100%;
-  }
-  .headingPricing {
-    color: rgb(130, 71, 255);
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: 1px solid #ededfa;
-  }
-  .headingTextSection5 {
-    font-size: 35px;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .headingTextSection5Para {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .pricingCardContainer {
-    display: grid;
-    row-gap: 40px;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  .pricingCardContainer > div {
-    padding: 25px 100px 25px 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .dollarText {
-    color: rgb(118, 117, 117);
-  }
-  .pricingDescription {
-    font-size: 18px;
-    color: rgb(118, 117, 117);
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    row-gap: 10px;
-    font-weight: 500;
-  }
-  .pricingCardOne {
-    background-color: #ededfa;
-  }
-  .pricingCardTwo {
-    background-color: rgb(28, 28, 28);
-    margin-top: -20px;
-  }
-  .cardButton {
-    background-color: white;
-    color: rgb(254, 129, 98);
-    width: fit-content;
-    padding: 2px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .getStartedButton {
-    background-color: white;
     font-size: 20px;
+    border-radius: 10px;
     width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 80px;
-    font-weight: 600;
-    cursor: pointer;
   }
-  .getStartedButtonSecond {
-    background-color: rgb(130, 71, 255);
-    font-size: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 30px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-  }
-  .getStartedButtonSecond:hover {
-    box-shadow: rgba(130, 71, 255, 0.2) 0px 0px 0px 8px;
-  }
-  .dollar {
-    font-size: 56px;
-    color: black;
-  }
-  .dollarTwo {
-    font-size: 56px;
-    color: white;
-  }
-  .dollarTextSecond {
-    color: white;
-  }
-  .faqContainer {
-    width: 100%;
+  .imageFirst {
+    background-image: url("https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512");
     margin-top: 40px;
+    width: 100%;
   }
-  .section6 {
-    text-align: left;
-  }
-  .paraTextSection {
-    color: rgb(118, 117, 117);
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
+  .footerContainer {
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-bottom: 100px;
   }
 
-  .section7,
-  .section8,
-  .section9 {
-    display: none !important;
-  }
-}
-.imageContainer {
-  display: flex;
-  margin-top: 50px;
-}
-.section7 {
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  column-gap: 100px;
-  margin: 130px;
-  padding: 20px;
-  border: 1px solid #ededfa;
-  border-radius: 20px;
-  margin-top: 0px;
-  height: 400px;
-  padding-top: 100px;
-}
-
-#textSection7 {
-  font-weight: 700;
-  font-size: 40px;
-}
-#tryButtonSection7 {
-  padding: 12px 48px;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.tryStartedDiv {
-  margin-top: 30px;
-}
-.purpleText {
-  color: rgb(130, 71, 255);
-}
-#section7Heading {
-  color: black;
-  font-size: 20px;
-  width: 44%;
-  margin-left: 100px;
-}
-.img1Section7 {
-  position: relative;
-}
-.img1Section7 {
-  position: absolute;
-}
-
-.userDivSection7 {
-  margin-top: -28px;
-}
-.imageContainerRight {
-  margin-top: 50px;
-  width: 30%;
-}
-
-.fixedButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  column-gap: 10px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.fixedButton img {
-  width: 20px;
-}
-@media only screen and (max-width: 426px) {
-  .section {
-    padding: 20px;
-  }
-  .heading {
-    font-size: 12px;
-  }
-  .section1 .headingText {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  .downText {
-    margin-top: 0px !important;
-  }
-  .paraText {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    text-align: center;
-    margin: auto;
-    font-weight: 500;
-    margin-top: 15px;
-  }
-  .buttons {
+  .sections {
     display: grid;
-    row-gap: 10px;
-  }
-  .buttons > div {
-    padding: 12px 96px;
-    border-radius: 18px;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .dashboardImage {
-    background-color: rgb(253, 242, 236);
-    margin-top: 40px;
-    border-radius: 28px;
-  }
-  .dashboardImage > img {
-    width: 100%;
-    border-radius: 18px;
-  }
-
-  .headingTextSection2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  .productInsight {
-    display: grid;
-    row-gap: 20px;
-    width: 100%;
-    margin-top: 60px;
-  }
-  .productInsight > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: #ededfa;
-    padding: 20px;
-    border-radius: 20px;
-    width: 90%;
-  }
-  .productInsight > div:nth-child(2) {
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid #ededfa;
-  }
-  .productInsight > div:nth-child(2) > img {
-    width: 100%;
-    height: 300px;
-  }
-  .desText {
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 30px;
-  }
-  .description > span:nth-child(1) {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .description > span:nth-child(2) {
-    font-size: 16px;
-    color: rgb(118, 117, 117);
-    margin-top: 10px;
-    font-weight: 500;
-  }
-  .productFunctionality {
-    display: grid;
-    margin-top: 50px;
-    row-gap: 40px;
-    justify-content: center;
-  }
-  .card {
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid #ededfa;
-  }
-  .card > img {
-    width: 100%;
-  }
-  .headingTextSectionThree {
-    font-size: 30px;
-    font-weight: 700;
-    width: 100%;
-  }
-  .headingTextSectionFour {
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-    margin-top: 20px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    line-height: 1.1em;
-  }
-  .paraTextSectionThree {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
+    row-gap: 15px;
     text-align: left;
     font-weight: 500;
-    margin-top: 15px;
-    width: 100%;
   }
-  .paraTextSectionFour {
-    font-size: 20px;
-    color: rgb(118, 117, 117);
-    font-weight: 500;
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-  }
-  .cardContainer {
-    display: grid;
-    row-gap: 30px;
-    grid-template-columns: auto;
-    margin-top: 200px;
-  }
-  .cardSectionThree {
+  .copyrightContainer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    row-gap: 10px;
-    background-color: rgb(33, 33, 33);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    padding: 30px 30px 50px 30px;
-    border-radius: 25px;
-    height: 300px;
+    justify-content: space-between;
+    padding: 60px 0px;
   }
-  .cardTitle {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.3em;
-    width: 90%;
-    margin: auto;
-  }
-  .cardDescription {
-    font-family: "Inter-Medium", "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-    line-height: 1.5em;
-    color: rgb(118, 117, 117);
-    width: 90%;
-    margin: auto;
-    margin-top: 5px;
-  }
-  .iconBox {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    background-color: rgb(130, 71, 255);
-    border-radius: 12px;
-  }
-  .iconContainer {
-    display: grid;
-    place-items: center;
-    margin-top: 50px;
-  }
-  .headerOfIconContainer {
-    color: rgb(130, 71, 255);
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-  }
-  .iconDiv {
-    background-color: rgba(255, 255, 255, 0.05);
-    height: 40px;
-    width: 40px;
-    opacity: 1;
-    border-radius: 20px;
-    padding: 9px;
+  .socialMedia {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    column-gap: 30px;
   }
-  .iconDiv img {
-    width: 40px;
+  .socialMedia img {
+    width: 25px;
   }
-  .image1 {
-    top: 20%;
-    left: 5%;
-  }
-  .image2 {
-    top: 20%;
-    left: 30%;
-  }
-  .image3 {
-    top: 20%;
-    left: 55%;
-  }
-  .image4 {
-    top: 20%;
-    left: 80%;
-  }
-  .image5 {
-    top: 25%;
-  }
-  .image6 {
-    top: 25%;
-  }
-
-  .bottomImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 20px;
-  }
-  .bottomImage img {
-    width: 100%;
-  }
-  .section4 {
-    display: grid;
-  }
-  .headingTextSection4 {
-    font-size: 56px;
-    margin-top: 20px;
-    line-height: 1em;
-    width: 100%;
-  }
-  .faqDetails {
-    text-align: left;
-    width: 100%;
-  }
-  .paraDetails {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-    line-height: 1.5em;
-    width: 100%;
-  }
-  .headingPricing {
-    color: rgb(130, 71, 255);
-    background-color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: 1px solid #ededfa;
-  }
-  .headingTextSection5 {
-    font-size: 35px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .headingTextSection5Para {
-    color: rgb(118, 117, 117);
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .pricingCardContainer {
-    display: grid;
-    row-gap: 40px;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  .pricingCardContainer > div {
-    padding: 25px 100px 25px 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .dollarText {
-    color: rgb(118, 117, 117);
-  }
-  .pricingDescription {
-    font-size: 18px;
-    color: rgb(118, 117, 117);
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    row-gap: 10px;
-    font-weight: 500;
-  }
-  .pricingCardOne {
-    background-color: #ededfa;
-  }
-  .pricingCardTwo {
-    background-color: rgb(28, 28, 28);
-    margin-top: -20px;
-  }
-  .cardButton {
-    background-color: white;
-    color: rgb(254, 129, 98);
-    width: fit-content;
-    padding: 2px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .getStartedButton {
-    background-color: white;
-    font-size: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 80px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .getStartedButtonSecond {
-    background-color: rgb(130, 71, 255);
-    font-size: 20px;
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 30px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-  }
-  .getStartedButtonSecond:hover {
-    box-shadow: rgba(130, 71, 255, 0.2) 0px 0px 0px 8px;
-  }
-  .dollar {
-    font-size: 56px;
-    color: black;
-  }
-  .dollarTwo {
-    font-size: 56px;
-    color: white;
-  }
-  .dollarTextSecond {
-    color: white;
-  }
-  .faqContainer {
-    width: 100%;
-    margin-top: 40px;
-  }
-  .section6 {
-    text-align: left;
-  }
-  .paraTextSection {
-    color: rgb(118, 117, 117);
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-
-  .section7,
-  .section8,
-  .section9
- {
-    display: none !important;
-  }
-}
-
-.imageContainer{
-  display: flex;
-  margin-top: 50px;
-}
-.section7{
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  column-gap: 100px;
-  margin: 130px;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 20px;
-  margin-top: 0px;
-  height: 400px;
-  padding-top: 100px;
-  background-color: white;
-  color: black;
-
-}
-
-#textSection7{
-  font-weight: 700;
-  font-size: 40px;
-  
-}
-#tryButtonSection7{
-  padding: 12px 48px;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 500;
- 
-}
-.tryStartedDiv{
-  margin-top: 30px;
-}
-.purpleText{
-  color: rgb(130, 71, 255);
-}
-#section7Heading{
-  color: black;
-  font-size: 20px; 
-  width: 44%;
-  margin-left: 100px;
-}
-.img1Section7{
-  position: relative;
- 
- 
-}
-.img1Section7{
-  position: absolute;
- 
-}
-
-.userDivSection7{
-  margin-top:-28px;
-}
-.imageContainerRight{
-  margin-top: 50px;
-  width: 30%;
- 
-}
-.footer1Section8{
-  display: flex;
-  justify-content: space-between;
-  margin:-100px 14px 14px 14px;
-
-}
-.footercontent{
-  text-decoration: none;
-  list-style: none;
-  text-align: left;
-  line-height: 30px;
-  color: rgb(84, 82, 82);
-}
-.footer2Section8{
-  
-  display: flex;
-  justify-content: space-between;
-  
-}
-.PinkishEffect{
-  background: rgb(255, 227, 227);
-  background: linear-gradient(to top, rgb(255, 252, 252) 0%, rgb(255, 248, 248) 100%);
-  padding-top: 70px;
-  border: none;
-  overflow: hidden;
-
-}
-.section9{
-  margin-top: -150px;
-  padding-bottom: 20px;
-
-}
-.section9>div{
- display: flex;
- justify-content: space-between;
- padding-top: 20px;
- 
-}
-.text1Section9{
-  color: rgb(118, 117, 117);
-  font-size: 15px;
-  font-weight: 600;
-  margin-top: 20px;
-
-
-}
-
-.socialMediaIcon{
-  list-style: none;
-  display: flex;
-  font-size: 28px;
-  column-gap: 10px;
-  overflow: hidden;
-
-}
-
-
-.fixedButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  column-gap: 10px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.fixedButton img {
-  width: 20px;
 }

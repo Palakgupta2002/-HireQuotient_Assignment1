@@ -29,11 +29,18 @@
 .templateButton {
   background-color: white;
   padding: 16px 20px;
-  border: 1px solid #EDEDFA;
+  border: 1px solid #ededfa;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(130, 71, 255);
 }
 @media only screen and (max-width: 426px) {
   .navValue {

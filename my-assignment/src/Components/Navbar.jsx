@@ -9,13 +9,21 @@ const Navbar = () => {
             </div>
             <div className="navValue">
                 <div className="navLinks">
-                    <span>Features</span>
+                    <a href="#features">
+                        <span>Features</span>
+                    </a>
                     <span className='dot'>.</span>
-                    <span>FAQ</span>
+                    <a href="#faq">
+                        <span>FAQ</span>
+                    </a>
                     <span className='dot'>.</span>
-                    <span>Pricing</span>
+                    <a href="#pricing">
+                        <span>Pricing</span>
+                    </a>
                     <span className='dot'>.</span>
-                    <span>Testimonials</span>
+                    <a href="#testimonials">
+                        <span>Testimonials</span>
+                    </a>
                 </div>
                 <button className="templateButton">Buy Template</button>
             </div>

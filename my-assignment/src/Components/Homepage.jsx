@@ -2,9 +2,6 @@ import React from 'react';
 import './homepage.css';
 import Collapse from './Collapse';
 import Marquee from "react-fast-marquee";
-import {GithubOutlined} from "@ant-design/icons"
-import {TwitterOutlined} from "@ant-design/icons"
-import {WeiboSquareOutlined} from "@ant-design/icons"
 import 'animate.css';
 const Homepage = () => {
 
@@ -37,7 +34,7 @@ const Homepage = () => {
                     />
                 </div>
             </div>
-            <div className=" section section2">
+            <div className=" section section2" id='features'>
                 <span className='heading'>🔥PREMIER FEATURES</span>
                 <div className='headingTextSection2'>Discover our product's <span className='orangeText'>Capabilities</span></div>
                 <div className="paraText">
@@ -283,62 +280,56 @@ const Homepage = () => {
                     </Marquee>
                 </div>
             </div>
-            <div className='PinkishEffect' >
-            <div className='section section7'>
-                <div className='textContainer'>
-                    <span className='heading'>👋 DON'T MISS OUT</span>
-                    <div className='headingTextSection2' id='textSection7'>Unleash your<span className='orangeText'><br />Potential</span> with us</div>
-                    <div className="paraTextSection">Join our community of ambitious  <br /> individuals and organizations eager to<br /> make a difference.</div>
-                    <div className='tryStartedDiv'><span className="getStartedShadowButton" id='tryButtonSection7'>Try out now</span></div>
-                </div>
-                <div className='imageContainer' >
-                    <div>
-                    <div className='heading' id='section7Heading'>
-                        <div className='userDivSection7'><span className='purpleText'><br />200+ </span>Happy users</div>
-                    </div>
-                    <div className='imageContainerRight'>
-                        <div className='img1Section7'>
-                            <img width={"430px"} src='https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512' />
-                        </div>
-                        <div className='img2Section7'>
-                            <img width={"430px"} src="https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512" alt="" />
+            <div className="section7">
+                <div className="sectionSeven">
+                    <div className="sectionSevenContainerOne">
+                        <span className='heading'>👋 DON'T MISS OUT</span>
+                        <div className='headingTextSection7'>Unleash your <span className='orangeText'>Potential</span> with us</div>
+                        <div className="paraTextSection7">Join our community of ambitious individuals and organizations eager to make a difference.</div>
+                        <div className='getStartedShadowButton' style={{ width: 'fit-content', padding: '15px 60px', marginTop: '20px', borderRadius: '20px', fontSize: '18px', fontWeight: '700' }}>
+                            <span>Try out now</span>
                         </div>
                     </div>
+                    <div className="sectionSevenContainerTwo">
+                        <div className="userBtn"><span style={{ color: '#8247FF' }}>200+ </span>Happy users</div>
+                        <div className="imageFirst">
+                            <img src="https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512" alt="" />
+                            {/* <img src="" alt="" /> */}
+                        </div>
+                    </div>
+
+                </div>
+                <div className="footerContainer">
+                    <div className="logo">
+                        <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="" />
+                    </div>
+                    <div className="sections">
+                        <a href="#features">
+                            <span>Features</span>
+                        </a>
+                        <a href="#faq">
+                            <span>FAQ</span>
+                        </a>
+                        <a href="#pricing">
+                            <span>Pricing</span>
+                        </a>
+                        <a href="#testimonials">
+                            <span>Testimonials</span>
+                        </a>
                     </div>
                 </div>
+                <hr />
+                <div className="copyrightContainer">
+                    <span>© 2022 ManageWise, Inc.</span>
+                    <span className='socialMedia'>
+                        <img src="https://www.svgrepo.com/show/512399/instagram-167.svg" alt="" />
+                        <img src="https://www.svgrepo.com/show/513008/twitter-154.svg" alt="" />
+                        <img src="https://www.svgrepo.com/show/512419/linkedin-161.svg" alt="" />
 
+                    </span>
+                </div>
             </div>
-            <div className="section section8">
-            <div className='footer1Section8' >
-            <div className="logo">
-                <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="" />
-            </div>
-               <ul className='footercontent'>
-                <li>Features</li>
-                <li>FAQ</li>
-                <li>Pricing</li>
-                <li>Testimonials</li>
-               </ul>
-            </div>  
-            </div>
-           
 
-            <div className='fixedButton'>
-                <img src="https://www.svgrepo.com/show/306070/framer.svg" alt="" />
-                <span>Made in Framer</span>
-            </div>
-            <div className="section section9">
-                <hr/>
-                <div>
-                <div><span className='text1Section9'>© 2022 ManageWise, Inc.</span></div>
-                <div className='socialMediaIcon'>
-                    <span><GithubOutlined/></span>
-                    <span><TwitterOutlined/></span> 
-                    <span><WeiboSquareOutlined/></span>
-                </div>
-                </div>
-            </div> 
-            </div>
         </div>
 
     );

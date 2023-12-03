@@ -1,38 +1,59 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 24px;
-    background-color: rgb(253, 242, 236);
-    border-bottom: 2px solid rgba(118, 117, 117, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: rgb(253, 242, 236);
+  border-bottom: 2px solid rgba(118, 117, 117, 0.05);
+}
+.logo img {
+  width: 180px;
+}
+.navValue {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+}
+.navLinks {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  font-size: 17px;
+}
+.dot {
+  margin-top: -5px;
+  color: rgb(202, 188, 181);
+}
+.templateButton {
+  background-color: white;
+  padding: 16px 20px;
+  border: 1px solid #EDEDFA;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 426px) {
+  .navValue {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .navbar {
+    padding: 12px 18px;
   }
   .logo img {
-    width: 180px;
+    width: 140px;
   }
   .navValue {
-    display: flex;
-    column-gap: 40px;
-    align-items: center;
-    justify-content: space-around;
-    color: #000;
+    column-gap: 20px;
   }
   .navLinks {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    font-size: 17px;
-  }
-  .dot {
-    margin-top: -5px;
-    color: rgb(202, 188, 181);
+    font-size: 14px;
   }
   .templateButton {
-    background-color: white;
-    padding: 16px 20px;
-    border: 1px solid #EDEDFA;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    padding: 14px 20px;
   }
-  
+}

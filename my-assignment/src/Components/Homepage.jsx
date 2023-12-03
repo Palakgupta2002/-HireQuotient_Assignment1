@@ -1,32 +1,36 @@
 import React from 'react';
 import './homepage.css';
 import Collapse from './Collapse';
-import {TwitterOutlined} from "@ant-design/icons"
+import Marquee from "react-fast-marquee";
 import {GithubOutlined} from "@ant-design/icons"
+import {TwitterOutlined} from "@ant-design/icons"
 import {WeiboSquareOutlined} from "@ant-design/icons"
-
+import 'animate.css';
 const Homepage = () => {
 
     return (
+
         <div className="homepage">
             <div className="section section1">
-                <span className='heading'>👋 WELCOME TO MANAGE WISE!</span>
-                <div className="headingText">
-                    <span>Empower your business with</span>
-                    <div className='downText'><span className='orangeText'>Strategic</span> insights</div>
-                </div>
-                <div className="paraText">
-                    Powerful management platform designed to streamline your business <br /> operations, boost productivity, and drive success
-                </div>
-                <div className="buttons">
-                    <div className='getStartedShadowButton'>
-                        <span>Get Started</span>
+                <div className="animate__animated animate__fadeInUp">
+                    <span className='heading'>👋 WELCOME TO MANAGE WISE!</span>
+                    <div className="headingText">
+                        <span>Empower your business with</span>
+                        <div className='downText'><span className='orangeText'>Strategic</span> insights</div>
                     </div>
-                    <div>
-                        <span>Watch Demo</span>
+                    <div className="paraText">
+                        Powerful management platform designed to streamline your business <br /> operations, boost productivity, and drive success
+                    </div>
+                    <div className="buttons">
+                        <div className='getStartedShadowButton'>
+                            <span>Get Started</span>
+                        </div>
+                        <div>
+                            <span>Watch Demo</span>
+                        </div>
                     </div>
                 </div>
-                <div className="dashboardImage">
+                <div className="dashboardImage animate__animated animate__fadeIn">
                     <img
                         src="https://framerusercontent.com/images/t9qCSNfZSNdBCMSiohCGNEIl4.jpg?scale-down-to=2048"
                         alt="dashboarImage"
@@ -53,21 +57,21 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className="productFunctionality">
-                    <div className="card">
+                    <div className="card animate__animated animate__flipInX">
                         <img src="https://framerusercontent.com/images/LFrHT3kBfxtMGAZfWkyLvYAKsbg.png?scale-down-to=512" alt="" />
                         <div className="description">
                             <span>Flexible Scheduling</span>
                             <span>Stay productive with our flexible scheduling system</span>
                         </div>
                     </div>
-                    <div className="card">
+                    <div className="card animate__animated animate__flipInX animate__delay-1s">
                         <img src="https://framerusercontent.com/images/p65qwfjd0cd0ZHZoNFpsh7XU.png?scale-down-to=512" alt="" />
                         <div className="description">
                             <span>Easy Communication</span>
                             <span>Collaborate seamlessly with your team in real-time</span>
                         </div>
                     </div>
-                    <div className="card">
+                    <div className="card animate__animated animate__flipInX animate__delay-2s">
                         <img src="https://framerusercontent.com/images/FaY6aekE67ytWg6HDfDpy2FaHY.png?scale-down-to=512" alt="" />
                         <div className="description">
                             <span>Analytics</span>
@@ -95,24 +99,23 @@ const Homepage = () => {
                 <div className='iconDiv image6'>
                     <img src="https://www.svgrepo.com/show/475694/vimeo-color.svg" alt="" />
                 </div>
-
                 <span className='heading'>🤩 AND MORE...</span>
                 <div className="headingTextSectionThree">Explore an array of features that elevate your <span className='orangeText'>Productivity</span> to new heights</div>
                 <div className="paraTextSectionThree">
                     Discover the tools that will revolutionize the way you manage and optimize your operations
                 </div>
                 <div className="cardContainer">
-                    <div className="cardSectionThree">
+                    <div className="cardSectionThree animate__animated animate__fadeIn">
                         <span className='iconBox'></span>
                         <span className='cardTitle'>Cross-Platform Compatibility</span>
                         <span className='cardDescription'>Enjoy the flexibility of cross-platform compatibility. Our product works seamlessly across desktop, web, and mobile devices, allowing you to work from your preferred device.</span>
                     </div>
-                    <div className="cardSectionThree">
+                    <div className="cardSectionThree animate__animated animate__fadeIn animate__delay-1s">
                         <span className='iconBox'></span>
                         <span className='cardTitle'>Stay Informed with Essential Notifications</span>
                         <span className='cardDescription'>Automate support from first customer contact to closing the ticket. Drastically improve time to resolution.Automate support from first customer contact to closing the ticket.</span>
                     </div>
-                    <div className="cardSectionThree">
+                    <div className="cardSectionThree animate__animated animate__fadeIn animate__delay-2s">
                         <span className='iconBox'></span>
                         <span className='cardTitle'>Secure Data Encryption at all times</span>
                         <span className='cardDescription'>Trust in our robust data encryption to keep your sensitive information safe and secure. Rest easy knowing your data is protected at all times.</span>
@@ -151,7 +154,7 @@ const Homepage = () => {
                 <div className='headingTextSection5'>Select your ideal <span className='orangeText'>Pricing</span> plan</div>
                 <span className='headingTextSection5Para'>At Manage Wise, we believe in providing you with <br />pricing plans that adapt to your unique needs.</span>
                 <div className="pricingCardContainer">
-                    <div className="pricingCardOne">
+                    <div className="pricingCardOne animate__animated animate__fadeIn">
                         <span className="cardButton">FREE</span>
                         <div className='dollarText'><span className='dollar'>$0</span> /month</div>
                         <div className="pricingDescription">
@@ -162,7 +165,7 @@ const Homepage = () => {
                         </div>
                         <span className="getStartedButton">Get started</span>
                     </div>
-                    <div className="pricingCardTwo">
+                    <div className="pricingCardTwo animate__animated animate__fadeIn animate__delay-1s">
                         <span className="cardButton">STANDARD</span>
                         <div className='dollarTextSecond'><span className='dollarTwo'>$25</span> /month</div>
                         <div className="pricingDescription">
@@ -175,7 +178,7 @@ const Homepage = () => {
                         </div>
                         <span className="getStartedButtonSecond">Get started</span>
                     </div>
-                    <div className="pricingCardOne">
+                    <div className="pricingCardOne animate__animated animate__fadeIn animate__delay-2s">
                         <span className="cardButton">BUSINESS</span>
                         <div><span className='dollar'>$42</span> /month</div>
                         <div className="pricingDescription">
@@ -194,7 +197,7 @@ const Homepage = () => {
                 <div className='headingTextSection2'>Hear from our <span className='orangeText'>Satisfied</span> clients</div>
                 <div className="paraTextSection">Discover why our clients love working with us. Read their <br /> testimonials and learn how we has helped businesses.</div>
                 <div className="marqueeContainer">
-                    <marquee >
+                    <Marquee gradient={true}>
                         <div className="testimonialCardContainer">
                             <div className="testimonialCard">
                                 <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
@@ -277,9 +280,10 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </div>
-                    </marquee>
+                    </Marquee>
                 </div>
             </div>
+            <div className='PinkishEffect' >
             <div className='section section7'>
                 <div className='textContainer'>
                     <span className='heading'>👋 DON'T MISS OUT</span>
@@ -334,7 +338,9 @@ const Homepage = () => {
                 </div>
                 </div>
             </div> 
+            </div>
         </div>
+
     );
 };
 

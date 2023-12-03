@@ -55,14 +55,14 @@ a {
   font-size: 20px;
   font-weight: 500;
 }
-.buttons > div:nth-child(1) {
+.getStartedShadowButton {
   background-color: rgb(130, 71, 255);
   color: white;
   cursor: pointer;
   transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.buttons > div:nth-child(1):hover {
+.getStartedShadowButton:hover {
   color: white;
   box-shadow: rgba(130, 71, 255, 0.2) 0px 0px 0px 8px;
 }
@@ -431,7 +431,7 @@ a {
 .section6 {
   text-align: left;
 }
-.paraTextSection6 {
+.paraTextSection {
   color: rgb(118, 117, 117);
   font-size: 20px;
   font-weight: 600;
@@ -439,6 +439,7 @@ a {
 }
 .marqueeContainer {
   margin-top: 60px;
+  
 }
 .testimonialCard {
   border: 1px solid #ededfa;
@@ -473,6 +474,113 @@ a {
   font-size: 24px;
   width: 100%;
 }
+.imageContainer{
+  display: flex;
+  margin-top: 50px;
+}
+.section7{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  column-gap: 100px;
+  margin: 130px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 20px;
+  margin-top: 0px;
+  height: 400px;
+  padding-top: 100px;
+
+}
+
+#textSection7{
+  font-weight: 700;
+  font-size: 40px;
+  
+}
+#tryButtonSection7{
+  padding: 12px 48px;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 500;
+ 
+}
+.tryStartedDiv{
+  margin-top: 30px;
+}
+.purpleText{
+  color: rgb(130, 71, 255);
+}
+#section7Heading{
+  color: black;
+  font-size: 20px; 
+  width: 44%;
+  margin-left: 100px;
+}
+.img1Section7{
+  position: relative;
+ 
+ 
+}
+.img1Section7{
+  position: absolute;
+ 
+}
+
+.userDivSection7{
+  margin-top:-28px;
+}
+.imageContainerRight{
+  margin-top: 50px;
+  width: 30%;
+ 
+}
+.footer1Section8{
+  display: flex;
+  justify-content: space-between;
+  margin:-100px 14px 14px 14px;
+
+}
+.footercontent{
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+  line-height: 30px;
+}
+.footer2Section8{
+  
+  display: flex;
+  justify-content: space-between;
+  
+}
+.section9{
+  margin-top: -150px;
+  padding-bottom: 20px;
+}
+.section9>div{
+ display: flex;
+ justify-content: space-between;
+ padding-top: 20px;
+ 
+}
+.text1Section9{
+  color: rgb(118, 117, 117);
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+
+}
+
+.socialMediaIcon{
+  list-style: none;
+  display: flex;
+  font-size: 28px;
+  column-gap: 10px;
+  overflow: hidden;
+
+}
+
+
 .fixedButton {
   position: fixed;
   bottom: 20px;

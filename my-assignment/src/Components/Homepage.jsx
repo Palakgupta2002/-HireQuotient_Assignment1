@@ -1,6 +1,9 @@
 import React from 'react';
 import './homepage.css';
 import Collapse from './Collapse';
+import {TwitterOutlined} from "@ant-design/icons"
+import {GithubOutlined} from "@ant-design/icons"
+import {WeiboSquareOutlined} from "@ant-design/icons"
 
 const Homepage = () => {
 
@@ -16,7 +19,7 @@ const Homepage = () => {
                     Powerful management platform designed to streamline your business <br /> operations, boost productivity, and drive success
                 </div>
                 <div className="buttons">
-                    <div>
+                    <div className='getStartedShadowButton'>
                         <span>Get Started</span>
                     </div>
                     <div>
@@ -74,6 +77,25 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="section section3">
+                <div className='iconDiv image1'>
+                    <img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="" />
+                </div>
+                <div className='iconDiv image2'>
+                    <img src="https://www.svgrepo.com/show/448248/slack.svg" alt="" />
+                </div>
+                <div className='iconDiv image3'>
+                    <img src="https://www.svgrepo.com/show/475645/dropbox-color.svg" alt="" />
+                </div>
+                <div className='iconDiv image4'>
+                    <img src="https://www.svgrepo.com/show/452202/figma.svg" alt="" />
+                </div>
+                <div className='iconDiv image5'>
+                    <img src="https://www.svgrepo.com/show/343538/zoom-communication-network-conversation-connection-internet.svg" alt="" />
+                </div>
+                <div className='iconDiv image6'>
+                    <img src="https://www.svgrepo.com/show/475694/vimeo-color.svg" alt="" />
+                </div>
+
                 <span className='heading'>🤩 AND MORE...</span>
                 <div className="headingTextSectionThree">Explore an array of features that elevate your <span className='orangeText'>Productivity</span> to new heights</div>
                 <div className="paraTextSectionThree">
@@ -96,6 +118,16 @@ const Homepage = () => {
                         <span className='cardDescription'>Trust in our robust data encryption to keep your sensitive information safe and secure. Rest easy knowing your data is protected at all times.</span>
                     </div>
                 </div>
+                <div className="iconContainer">
+                    <span className="headerOfIconContainer">🛠 INTEGRATIONS</span>
+                    <br />
+                    <span className='headingTextSectionFour'>Enable <span className='orangeText'>integration</span> with other popular tools and platforms</span>
+                    <span className="paraTextSectionFour">Seamlessly connect and amplify your workflow by enabling integration with a diverse array of widely-used tools and platforms.</span>
+                    <div className="bottomImage">
+                        <img src="https://framerusercontent.com/images/sQd7MkwgkdQRRQ1a99k5Z1zLfA.png?scale-down-to=1024" alt="" />
+                    </div>
+
+                </div>
 
             </div>
             <div className="section section4" id='faq'>
@@ -112,7 +144,7 @@ const Homepage = () => {
                     <Collapse title={"Can I access Manage Wise from different devices and platforms?"} children={"Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices."} />
                     <Collapse title={"What kind of support options do you offer to users?"} children={"We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise."} />
                     <Collapse title={"How secure is the data stored within Manage Wise?"} children={"Your data's security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected."} />
-                </div>   
+                </div>
             </div>
             <div className="section section5" id='pricing'>
                 <span className='headingPricing'>💲PRICING</span>
@@ -160,9 +192,9 @@ const Homepage = () => {
             <div className="section section6" id="testimonials">
                 <span className='heading'>🧡 TESTIMONIALS</span>
                 <div className='headingTextSection2'>Hear from our <span className='orangeText'>Satisfied</span> clients</div>
-                <div className="paraTextSection6">Discover why our clients love working with us. Read their <br /> testimonials and learn how we has helped businesses.</div>
+                <div className="paraTextSection">Discover why our clients love working with us. Read their <br /> testimonials and learn how we has helped businesses.</div>
                 <div className="marqueeContainer">
-                    <marquee>
+                    <marquee >
                         <div className="testimonialCardContainer">
                             <div className="testimonialCard">
                                 <div className='review'><span>"The customer support <br /> team behind this product <br />is exceptional. They have been <br />incredibly responsive and helpful, addressing <br />any questions or concerns promptly.</span></div>
@@ -248,11 +280,60 @@ const Homepage = () => {
                     </marquee>
                 </div>
             </div>
+            <div className='section section7'>
+                <div className='textContainer'>
+                    <span className='heading'>👋 DON'T MISS OUT</span>
+                    <div className='headingTextSection2' id='textSection7'>Unleash your<span className='orangeText'><br />Potential</span> with us</div>
+                    <div className="paraTextSection">Join our community of ambitious  <br /> individuals and organizations eager to<br /> make a difference.</div>
+                    <div className='tryStartedDiv'><span className="getStartedShadowButton" id='tryButtonSection7'>Try out now</span></div>
+                </div>
+                <div className='imageContainer' >
+                    <div>
+                    <div className='heading' id='section7Heading'>
+                        <div className='userDivSection7'><span className='purpleText'><br />200+ </span>Happy users</div>
+                    </div>
+                    <div className='imageContainerRight'>
+                        <div className='img1Section7'>
+                            <img width={"430px"} src='https://framerusercontent.com/images/584hzJDnWCS5SFABKjaCzgDspY.png?scale-down-to=512' />
+                        </div>
+                        <div className='img2Section7'>
+                            <img width={"430px"} src="https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512" alt="" />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className="section section8">
+            <div className='footer1Section8' >
+            <div className="logo">
+                <img src="https://framerusercontent.com/images/tgELERqZ0nObn14bTi418qTbg.png?scale-down-to=512" alt="" />
+            </div>
+               <ul className='footercontent'>
+                <li>Features</li>
+                <li>FAQ</li>
+                <li>Pricing</li>
+                <li>Testimonials</li>
+               </ul>
+            </div>  
+            </div>
+           
 
             <div className='fixedButton'>
                 <img src="https://www.svgrepo.com/show/306070/framer.svg" alt="" />
                 <span>Made in Framer</span>
             </div>
+            <div className="section section9">
+                <hr/>
+                <div>
+                <div><span className='text1Section9'>© 2022 ManageWise, Inc.</span></div>
+                <div className='socialMediaIcon'>
+                    <span><GithubOutlined/></span>
+                    <span><TwitterOutlined/></span> 
+                    <span><WeiboSquareOutlined/></span>
+                </div>
+                </div>
+            </div> 
         </div>
     );
 };

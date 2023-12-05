@@ -11,7 +11,7 @@
       <li> use some Animations</li>
       <li>Use some libararies to make it faster</li>
     </ul>
-    <h1> Screen-Shorts</h1>
+    <h1> Screen-Short</h1>
     <h3>For Laptop or PC </h3>
     <a href="https://ibb.co/d6f4kXg"><img src="https://i.ibb.co/RPgTQty/Whats-App-Image-2023-12-03-at-5-41-48-PM-2.jpg" alt="Whats-App-Image-2023-12-03-at-5-41-48-PM-2" border="0" /></a>
     <a href="https://ibb.co/JkPG5XB"><img src="https://i.ibb.co/QmGTrsb/Whats-App-Image-2023-12-03-at-5-41-48-PM.jpg" alt="Whats-App-Image-2023-12-03-at-5-41-48-PM" border="0" /></a>
